@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import Login from './components/login';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img
+          className='logo'
+          src="https://takyon.io/static/media/logo-takyon.b78b3de5c0b2d3aae512.png" alt="logo takyon"
+        ></img>
       </header>
-    </div>
+      <div className="App">
+        <Login />
+      </div></>
   );
 }
 
